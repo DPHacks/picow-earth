@@ -1,0 +1,37 @@
+# Configure the WiFi SSD and Password
+WIFI_SSID = "<WIFI-SSID>"
+WIFI_PASSWORD = "<WIFI-PASSWD>"
+# 
+# MQTT Settings: Set the broker name or IP address and topic to broadcast
+MQTT_ENABLED = 1
+MQTT_BROKER = "example.local"
+MQTT_TOPIC = "enviro/picoearth"
+MQTT_PORT = 1883
+MQTT_ISTLS = 0
+MQTT_USERNAME = 0
+MQTT_PASSWORD = 0
+#
+# Moisture sensor operation
+# Number of minutes between checking soil moisture
+SENSOR1_ENABLED = 1
+SENSOR2_ENABLED = 1
+PUMP1_ENABLED = 1
+PUMP2_ENABLED = 1
+INTERVAL = 30
+POT1_WATERING_POINT = 2200
+POT1_RUN_TIME = 4.5 # Seconds with pump on/running
+POT2_WATERING_POINT = 2200
+POT2_RUN_TIME = 4.5 # Seconds with pump on/running
+#
+# Number of minutes to recheck soil moisture after pump operation;
+# Used to check if enough water was used. Run pump again as needed.
+RECHECK_INTERVAL = 20
+POT1_RERUN_TIME = 1
+POT2_RERUN_TIME = 1
+#
+# Pump Operation
+
+# 0 for Celsius, 1 for Fahrenheit
+C_TO_F = 1
+# Number of values to smooth average
+SMOOTH = 10
